@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bakery — Bite into Happiness</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small customizations */
+    @layer utilities { .text-brand { color: #1f1b18 } }
+    /* font fallback stack */
+    :root{--cream:#f6e9e4;--pink:#e9cbd0}
+  </style>
+</head>
+<body class="bg-[--cream] text-[#1f1b18] font-sans">
+  <!-- NAV -->
+  <header class="w-full bg-white/90 backdrop-blur-sm sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="text-xl font-semibold">HOME</div>
+      <nav class="hidden md:flex gap-6 text-sm uppercase tracking-wider">
+        <a class="hover:opacity-80">Home</a>
+        <a class="hover:opacity-80">Menu</a>
+        <a class="hover:opacity-80">About</a>
+        <a class="hover:opacity-80">Cakes</a>
+        <a class="hover:opacity-80">Pastries</a>
+        <a class="hover:opacity-80">Contact</a>
+      </nav>
+      <div class="md:hidden">☰</div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-12">
+      <div class="pt-12 md:pt-0">
+        <h1 class="text-4xl md:text-6xl font-serif leading-tight">Bite into<br/>Happiness.</h1>
+        <p class="mt-6 text-gray-600 max-w-xl">Handcrafted cakes and delicate macarons made with love. Order now for same-day pickup or delivery.</p>
+        <div class="mt-8 flex gap-4">
+          <a class="inline-block bg-[#f3e1d6] border border-[#d6bfb8] px-6 py-3 rounded-full font-medium shadow-sm hover:scale-105 transition">Order Now</a>
+          <a class="inline-block px-6 py-3 rounded-full border border-transparent text-sm font-medium hover:underline">View Menu</a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <!-- hero image (local asset) -->
+        <img src="https://cdn.pixabay.com/photo/2024/03/06/00/28/ai-generated-8615472_1280.jpg" alt="Cake hero" class="w-full rounded-2xl shadow-xl object-cover max-h-[520px]" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS / CARDS -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="bg-white p-8 rounded-2xl shadow-md">
+      <h2 class="text-2xl font-semibold text-center">Handcrafted Cakes</h2>
+      <p class="text-center text-gray-600 mt-2">Freshly baked with premium ingredients — available in multiple flavors and sizes.</p>
+
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- card 1 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+          <img src="https://cdn.pixabay.com/photo/2023/10/10/09/17/cheesecake-8305890_1280.jpg" alt="cupcake" class="w-full h-44 object-cover" />
+          <div class="p-4">
+            <h3 class="font-medium">Strawberry Cheesecake</h3>
+            <p class="text-sm text-gray-500 mt-1">Creamy cheesecake with fresh strawberry topping.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="text-lg font-semibold">$35.00</div>
+              <button class="px-4 py-2 rounded-full bg-[#e9cbd0]">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+          <img src="https://cdn.pixabay.com/photo/2018/03/24/16/08/cake-3257019_1280.jpg" alt="cupcake2" class="w-full h-44 object-cover" />
+          <div class="p-4">
+            <h3 class="font-medium">Pink Velvet Cupcake</h3>
+            <p class="text-sm text-gray-500 mt-1">Soft vanilla sponge with pink buttercream swirl.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="text-lg font-semibold">$3.50</div>
+              <button class="px-4 py-2 rounded-full bg-[#e9cbd0]">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
+          <img src="https://cdn.pixabay.com/photo/2024/04/13/11/29/muffins-8693748_1280.jpg" alt="cupcake3" class="w-full h-44 object-cover" />
+          <div class="p-4">
+            <h3 class="font-medium">Chocolate Cupcake</h3>
+            <p class="text-sm text-gray-500 mt-1">Rich chocolate sponge topped with chocolate frosting.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <div class="text-lg font-semibold">$3.25</div>
+              <button class="px-4 py-2 rounded-full bg-[#e9cbd0]">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- promo area -->
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <div class="md:col-span-2">
+          <h4 class="font-semibold">Limited Time Promo</h4>
+          <p class="text-gray-600 mt-2">Seasonal macarons and cupcakes — get 15% off for the weekend. Use code: SWEET15</p>
+        </div>
+        <div class="flex justify-end">
+          <a class="inline-block px-6 py-3 bg-[#d6bfb8] rounded-full">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / FOOTER -->
+  <footer class="bg-white mt-12">
+    <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h5 class="font-semibold">About</h5>
+        <p class="text-gray-600 mt-2 text-sm">We bake everything fresh daily using local ingredients. Pastries, cakes, and macarons made with love.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold">Contact</h5>
+        <p class="text-sm text-gray-600 mt-2">hello@bakery.com<br/>+1 (555) 123-4567</p>
+      </div>
+      <div>
+        <h5 class="font-semibold">Follow</h5>
+        <div class="flex gap-3 mt-3 text-gray-700">
+          <span class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center">f</span>
+          <span class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center">t</span>
+          <span class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center">i</span>
+        </div>
+      </div>
+    </div>
+    <div class="border-t py-6 text-center text-sm text-gray-500">© 2025 Bakery. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
